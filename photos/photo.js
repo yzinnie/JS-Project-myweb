@@ -11,7 +11,8 @@ prevButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-  if (index === 19) return;
+  console.log(index);
+  if (index === 24) return;
   index += 1;
   photos.style.transform = `translate3d(-${500 * index}px, 0, 0)`;
 });

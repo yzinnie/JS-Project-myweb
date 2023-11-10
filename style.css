@@ -15,6 +15,7 @@
   width: 500px;
   object-fit: contain;
 }
+
 .btnContainer {
   position: absolute;
 }
@@ -135,7 +136,6 @@ article {
   background-color: #000000;
   color: #ffffff;
   border: none;
-
   padding: 15px;
   margin: 3px;
   transition: background-color 0.5s;
@@ -172,4 +172,21 @@ article {
   background-position: center;
   background-image: url('./img/menu-up.png');
   cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+  body,
+  article {
+    display: block;
+  }
+  .tab-btn,
+  .about-content {
+    font-size: 14px;
+  }
+  .img-container img {
+    display: none;
+  }
+  .btn-container {
+    padding-top: 40%;
+  }
 }

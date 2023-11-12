@@ -179,14 +179,35 @@ article {
   article {
     display: block;
   }
-  .tab-btn,
-  .about-content {
-    font-size: 14px;
+
+  .tab-btn {
+    margin-top: 50%;
+    font-size: 16px;
+  }
+  #project > div > h3 {
+    font-size: 16px;
   }
   .img-container img {
     display: none;
   }
-  .btn-container {
-    padding-top: 40%;
+
+  .btnContainer {
+    text-align: center;
+  }
+  .prev {
+    right: -40px;
+  }
+  .next {
+    left: 360px;
+  }
+
+  .photos-container {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .photos-container > .photos > img {
+    width: 500px;
+    object-fit: contain;
   }
 }

@@ -81,7 +81,7 @@ body {
   text-decoration: none;
 }
 
-#header-ul a {
+/* #header-ul a {
   display: inline-block;
   letter-spacing: 2px;
   padding: 10px 20px 10px;
@@ -90,12 +90,12 @@ body {
   font-weight: 500;
   color: #262626;
   text-decoration: none;
-}
+} */
 
-#header-ul a:hover {
+/* #header-ul a:hover {
   color: #000000;
   border: 1px solid black;
-}
+} */
 
 article {
   display: flex;
@@ -137,8 +137,12 @@ article {
 }
 
 .about-content {
-  font-size: 16px;
+  font-size: 15px;
   width: max-content;
+}
+
+#project h3 {
+  font-size: 16px;
 }
 
 .about-content div {

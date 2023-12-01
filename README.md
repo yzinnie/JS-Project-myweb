@@ -8,7 +8,7 @@
                 <h4> ⁕ 구현 기능 </h4>
             <h5>Button-active</h5>
                     <h5>img web 구현</h5>
-                      <a href="photos/photo.html"> What i like-Trip 🏄🏻‍♀</a>
+                      <a href="[photos/photo.html](https://yzinnie.github.io/JS-Project-myweb/photos/photo.html)"> What i like-Trip 🏄🏻‍♀</a>
                  <h5>화면 상단이동 아이콘 생성 - Window: scrollTo() method<h5>     
                 <h4> ⁕ 사용한 기술스택</h4>
                   <h5>Html, Css, JavaScript</h5>

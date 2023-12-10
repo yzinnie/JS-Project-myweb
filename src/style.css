@@ -1,0 +1,250 @@
+/* photo.html */
+.photos-container {
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.photos-container > .photos {
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  transition: transform 0.2s;
+}
+
+.photos-container > .photos > img {
+  width: 500px;
+  object-fit: contain;
+}
+
+.btnContainer {
+  position: absolute;
+}
+
+.prev {
+  position: absolute;
+  right: 300px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  background-color: #ffffff00;
+  background-image: url(./img/arrow-left.png);
+}
+
+.next {
+  position: absolute;
+  left: 300px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  background-color: #ffffff00;
+  background-image: url(./img/arrow-right.png);
+}
+
+/* index.html */
+
+body {
+  font-family: 'SUIT', 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+#header-main a {
+  display: inline-block;
+  letter-spacing: 5px;
+  padding: 10px 20px 10px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #262626;
+  text-decoration: none;
+}
+
+#menu ul {
+  display: inline;
+  box-sizing: border-box;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#menu li {
+  display: inline;
+}
+
+#menu a {
+  display: inline-block;
+  padding: 10px 20px 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #262626;
+  text-decoration: none;
+}
+
+article {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info li,
+#project p,
+#project li,
+#EX p {
+  font-family: 'SUIT', 'Noto Sans KR', sans-serif;
+  margin-bottom: 10px;
+}
+
+#info a {
+  color: #00000065;
+  font-size: 14px;
+}
+
+/* .about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.img-container {
+  width: fit-content;
+  height: fit-content;
+}
+.img-container img {
+  width: 900px;
+  margin: 3px;
+  padding-top: 95px;
+}
+
+.about-content {
+  font-size: 15px;
+  width: max-content;
+}
+
+#project h3 {
+  font-size: 16px;
+}
+
+.about-content div {
+  border-bottom: 1px solid #33323237;
+}
+
+/* .project-img {
+  width: 400px;
+} */
+
+.btn-container {
+  margin: 10px;
+}
+
+.tab-btn {
+  font-family: 'SUIT', 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  margin: 3px;
+  transition: background-color 0.5s;
+}
+
+.content {
+  display: none;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid black;
+}
+
+.content.active {
+  display: block;
+}
+/* 
+#project {
+  margin: 20px;
+  width: min-content;
+} */
+
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 41px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff00;
+  background-size: 50px;
+  background-position: center;
+  background-image: url('../img/menu-up.png');
+  cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+  #header ul,
+  .img-container img {
+    display: none;
+  }
+  body,
+  article {
+    display: block;
+  }
+
+  .tab-btn {
+    margin-top: 50%;
+    font-size: 16px;
+  }
+  #project > div > h3 {
+    font-size: 16px;
+  }
+
+  .btnContainer {
+    text-align: center;
+  }
+  .prev {
+    right: -40px;
+  }
+  .next {
+    left: 360px;
+  }
+
+  .photos-container {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .photos-container > .photos > img {
+    width: 500px;
+    object-fit: contain;
+  }
+}

@@ -29,7 +29,6 @@ li {
 
 .content div,
 #contact {
-  padding-top: 90px;
   border-bottom: 1px solid #d0cdcd37;
 }
 
@@ -88,4 +87,14 @@ li {
 
 #project {
   text-align: start;
+}
+
+#project div:first-child,
+#contact div:first-child,
+#info div:first-child {
+  padding-top: 90px;
+}
+
+a {
+  color: rgba(207, 212, 128, 0.696);
 }

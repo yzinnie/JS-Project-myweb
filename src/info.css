@@ -83,6 +83,7 @@ li {
 
 #menu a:hover {
   color: white;
+  transition: 0.3s all ease;
 }
 
 #project {
@@ -95,6 +96,17 @@ li {
   padding-top: 90px;
 }
 
-a {
-  color: rgba(207, 212, 128, 0.696);
+a:hover {
+  color: rgba(19, 228, 235, 0.91);
+  transition: 0.3s all ease;
+}
+
+#project-img {
+  padding-top: 20px;
+  width: 600px;
+  border-bottom: none;
+}
+
+img {
+  width: 100%;
 }

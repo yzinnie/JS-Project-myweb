@@ -105,6 +105,11 @@ body {
   text-decoration: none;
 }
 
+#menu a:hover {
+  color: #26262655;
+  transition: 0.3s all ease;
+}
+
 article {
   display: flex;
   flex-wrap: nowrap;
